@@ -1,0 +1,55 @@
+-> What is Powershell and its key uses?
+ Powershell is a powerful task automation and configuration management framework from microsoft.
+
+-> Key Uses:
+- Automating adminsitrative tasks:
+    - Powershell excels at automating repetitive tasks on Windows Systems, like:
+        - Managing user accounts and groups in Active Directory.
+        - Configuring network settings.
+        - Managing services and processes.
+        - Working with files and folders.
+        - Managing Windows registry.
+    
+- Scripting:
+    - Powershell is a full-fledge scripting language, allowing you to write complex scripts to automate complex tasks.
+
+- Remote management:
+    - Manage multiple computers remotely using Powershell remoting.
+
+- Cloud management:
+    - Powershell can manage cloud resources in platforms like Azure, AWS and others.
+
+- CI/CD:
+ - Integrate Powershell scripts into your continuous integration and continuous deployment pipelines to automate builds, testing and deployments.
+
+ - Data Manipulation:
+    - Powershell can process and manipulate data from various sources like text files, CSV files, databases and APIs.
+
+- And, many more.
+
+
+-> Why no ISE ?
+- Powershell 0.7 does not have an Integrated Scripting Environment(ISE) for a few reasons:
+    - Architectural Differences:
+        - Powershell 7 is built on .NET Core while Windows Powershell (which includes the ISE) is built on the .NET Framework. This   makes it difficult to integrate the ISE, which is tightly coupled with the .NET Framework, into PowerShell 7.
+
+    - Focus on Cross-Platform Compatibility:
+        - Powershell 7 aims to be cross-platform, running on Windows, macOS and Linux. The ISE, being a Windows-specific component, doesn't fit into this vision.
+
+    - Modern Development Environments:
+        - Microsoft recommends Visual Studio (VS Code) with the Powershell extension as the preferred development environment for PowerShell 7. VS Code is a powerful, cross-platform editor with extensive features for debugging, IntelliSense and more.
+
+    - Legacy Component:
+        - The ISE is considered a legacy component and while it is still available in Windows PowerShell 5.1, Microsoft is not investing in its futher development.
+
+
+Note: All PowerShell files are saved using extension ".ps1"
+
+-> How commands are written in PowerShell ?
+    - PowerShell commands, known as cmdlets(pronounced as "command-lets") follow a specific structure:
+        Verb-Noun
+        - Verb: Represent the action you want to perform (e.g., Get, Set, Add, Remove).
+        - Noun: Represent the object you want to work with (e.g., Process, Service, Item, ChildItem).
+
+-> Do we need to learn all the commands?
+- Not actually. Since we have commands like "Get-Command" and others and also good documentaton which can help us in writing good PS Scripts.
