@@ -14,4 +14,14 @@ Get-Command -Noun Service
 Get-Command -Verb Install
 
 # If we want to find how to use any command
-Get-Help Start-Service 
+Get-Help Start-Service -Full
+
+# What is an alias?
+# It is the short form for the cmdlets
+# Start-Service = sasv
+# Get-Service = gsv
+gsv
+sasv
+
+# To print the list of all the aliases
+Get-Alias
